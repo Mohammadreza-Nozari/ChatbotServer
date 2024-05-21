@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>AIChatbotServices</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EasyMicroservices.Database.EntityFrameworkCore" Version="0.0.0.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIChatbotServices.Domain\AIChatbotServices.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AICore.DataBase">
+      <HintPath>..\..\NugetPackages\AICore.DataBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

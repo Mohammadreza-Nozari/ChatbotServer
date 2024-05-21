@@ -1,0 +1,6 @@
+@AIChatbotServices.WebApi_HostAddress = http://localhost:5030
+
+GET {{AIChatbotServices.WebApi_HostAddress}}/swagger/
+Accept: application/json
+
+###

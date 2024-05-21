@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>AIChatbotServices</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EasyMicroservices.Mapper.AutoMapper" Version="0.0.0.7" />
+    <PackageReference Include="EasyMicroservices.Security" Version="0.0.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIChatbotServices.Database\AIChatbotServices.Database.csproj" />
+  </ItemGroup>
+
+</Project>

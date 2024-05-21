@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>AIChatbotServices</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="EasyMicroservices.Logger.DependencyInjection" Version="0.0.0.6" />
+    <PackageReference Include="EasyMicroservices.Mapper.AutoMapper" Version="0.0.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="EasyMicroservices.Logger.Serilog" Version="0.0.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIChatbotServices.Logics\AIChatbotServices.Logics.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AICore.DataBase">
+      <HintPath>..\..\NugetPackages\AICore.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="AICore.Domain">
+      <HintPath>..\..\NugetPackages\AICore.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="AICore.Logics">
+      <HintPath>..\..\NugetPackages\AICore.Logics.dll</HintPath>
+    </Reference>
+    <Reference Include="AICore.WebApi">
+      <HintPath>..\..\NugetPackages\AICore.WebApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
